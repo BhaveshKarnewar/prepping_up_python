@@ -63,8 +63,36 @@
 
 # **kwargs, named parameters
 
-def print_kwargs(name,power):
-  print("NAME", name)
-  print("POWER", power)
+# def print_kwargs(**kwargs):
+#   for key,val in kwargs.items():
+#     print(key,val)
+#   print(kwargs)
 
-print_kwargs(power="lazer")
+# print_kwargs(power="lazer",name="sdsf",villan="sancnd")
+
+
+
+
+# yeild, even genrtator
+
+# def even_gen(limit):
+#   for i in range(2,limit+1,2):
+#     yield i
+
+# for i in even_gen(10):
+#   print(i)
+
+
+
+
+
+# factorial using recursion
+
+def factorial(n):
+  if n==0:
+    return 1
+  else:
+    return n*factorial(n-1)
+  
+a=factorial(5)
+print(a)
