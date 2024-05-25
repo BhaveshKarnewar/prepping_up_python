@@ -54,7 +54,9 @@
 # *args for accepting multiple arguments
 
 # def sum_all(*args):
+#   print(*args)
 #   return sum(args)
+
 
 # print(sum_all(1,2,3))
 
@@ -65,7 +67,7 @@
 
 # def print_kwargs(**kwargs):
 #   for key,val in kwargs.items():
-#     print(key,val)
+#     print(f"{key}: {val}")
 #   print(kwargs)
 
 # print_kwargs(power="lazer",name="sdsf",villan="sancnd")
@@ -73,7 +75,7 @@
 
 
 
-# yeild, even genrtator
+# yeild, even no generatator
 
 # def even_gen(limit):
 #   for i in range(2,limit+1,2):
@@ -88,11 +90,11 @@
 
 # factorial using recursion
 
-def factorial(n):
-  if n==0:
-    return 1
-  else:
-    return n*factorial(n-1)
+# def factorial(n):
+#   if n==0:
+#     return 1
+#   else:
+#     return n*factorial(n-1)
   
-a=factorial(5)
-print(a)
+# a=factorial(5)
+# print(a)

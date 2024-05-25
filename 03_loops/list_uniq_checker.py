@@ -10,5 +10,5 @@ uni_item =set()
 for item in items:
   if item in uni_item:
     print("duplo :", item)
-    break
+    exit()
   uni_item.add(item)
