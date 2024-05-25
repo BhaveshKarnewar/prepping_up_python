@@ -1,14 +1,20 @@
 from oops import Car
 
-punch= Car("tata","Punch")
-print(punch.model)
+
 
 class Battery:
-  pass
+  def battery(self):
+    return "Battery is present"
 
 class Engine:
-  pass
+ def Engine(self):
+    return "Engine is present"
 
 
-class electric_car(Battery,Engine,Car):
+class electric_car2(Battery,Engine,Car):
   pass
+
+punch= electric_car2("tata","Punch")
+print(punch.model)
+print(punch.battery())
+print(punch.Engine())
