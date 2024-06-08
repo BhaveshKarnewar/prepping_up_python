@@ -1,4 +1,4 @@
-# # calculate and return square of a num
+# # calculate and return sum of a num
 
 # user_num1=int(input("no1: "))
 # user_num2=int(input("no2: "))
@@ -29,6 +29,8 @@
 #   area= math.pi * (radius**2)
 #   circumference= 2*math.pi*radius
 #   return area,circumference
+
+
 
 # area, circum=circle(10)
 # print(round(area,2))
@@ -98,3 +100,4 @@
   
 # a=factorial(5)
 # print(a)
+
