@@ -1,15 +1,17 @@
+
 import time
 
 def timer(func):
   def wrapper(*args,**kwargs):
-    start=time.time()
+    start =time.time()
     result=func(*args,**kwargs)
-    end=time.time()
-    print(f"{func.__name__} ran in {end-start} secs")
+    end =time.time()
+    print(f"{func.__name__} is run in {end -start} time")
     return result
   return wrapper
 
 @timer
-def example_func(n):
+def test_fx(n):
   time.sleep(n)
-example_func(4)
+
+test_fx(2)

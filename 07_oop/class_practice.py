@@ -1,27 +1,38 @@
 class Car:
-  def __init__(self,brand,model):
-    self.brand=brand
-    self.model=model
 
-  def greet(self):
-    return f"Hello user, -{self.brand} {self.model} "
+  count=0
+
+  def __init__(self,brand,model):
+    self.__brand=brand
+    self.model=model
+    Car.count+=1
+
+  def getter(self):
+    return self.__brand
+
+  def greet(self, name):
+    return f"Hello {name}, -{self.__brand} {self.model}"
+  
+  def fuel_type(self):
+    return "Tel Mitti ka"
+  
+  @staticmethod
+  def gen_info():
+   return "cars are amazing"
   
 
 class Ev(Car):
-  def __init__(self, brand, model, battery):
+  def __init__(self, brand, model,battery):
     super().__init__(brand, model)
     self.battery=battery
 
-  def evGreet(self):
-    return "Hello user, you are Gay!"
+  def fuel_type(self):
+    return "Electrifying current"
 
-punch= Ev("Tata", "Punch", "120 W")
 
-print(punch)
-print(punch.brand)
-print(punch.model)
-print(punch.battery)
-p=punch.greet()
-q=punch.evGreet()
-print(p)
-print(q)
+Punch= Car("tata","punch")
+print(Car.gen_info())
+
+# Comet= Ev("Mg","Comet","120W")
+# print(Comet.fuel_type())
+
