@@ -9,5 +9,10 @@
 # print(a(5))
 # print(5**5)
 
-str="matata"
-print(str.count("t"))
+a=2
+b=3
+
+def myfn():
+  return a,b
+
+print(myfn())
